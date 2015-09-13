@@ -1,9 +1,7 @@
-wp_boil
+Sangree.co
 -------
 
-Starting point for our wordpress themes
-
-git clone --recursive --depth 1 git@github.com:interglobalvision/interglobalvision-wp-boil.git
+Custom wordpress theme
 
 Tech this uses [thnx]:
 
