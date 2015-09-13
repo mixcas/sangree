@@ -54,6 +54,8 @@
   <section id="main-container">
 
   <!-- start content -->
-  <header id="header">
-    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+  <header id="header" class="u-cf">
+    <img id="logo" src="http://puu.sh/k4SJS/59f32cb3cd.jpg" />
+    <!--<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1> -->
+  <?php get_template_part('partials/nav'); ?>
   </header>

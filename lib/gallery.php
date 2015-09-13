@@ -82,10 +82,7 @@ function my_gallery_shortcode($attr) {
 
 	$selector = "gallery-{$instance}";
 
-	$gallery_div = "<div id='$selector' class='cycle-slideshow gallery galleryid-{$id}' data-cycle-fx='scrollHorz' data-cycle-timeout='0' data-cycle-swipe=true data-cycle-slides='div'>
-	<nav class='cycle-prev'></nav>
-    <nav class='cycle-next'></nav>
-    ";
+	$gallery_div = "<div id='$selector' class='gallery galleryid-{$id}'> ";
 	$output = $gallery_div;
 
 	$i = 0;

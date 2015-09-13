@@ -17,7 +17,8 @@ if( have_posts() ) {
 
     <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-      <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+      <a href="#" id="title"><?php the_title(); ?></a>
+      <a href="#" id="title-fixed"><?php the_title(); ?></a>
 
       <?php the_content(); ?>
 

@@ -35,8 +35,8 @@ $margin-tiny = ($gutter / 2)
 $margin-basic = ($gutter * 2)
 $margin-large = ($gutter * 5)
 
-$font-size-basic = 15px
-$font-leading-basic = 1.35em
+$font-size-basic = 20px
+$font-leading-basic = 1.4
 $font-tracking-basic = 0.001em
 
 $color-black-soft = rgb(14, 14, 14)
@@ -45,7 +45,7 @@ $color-white-soft = rgb(253, 253, 253)
 // TYPOGRAPHY
 
 body
-  font-family: helvetica, arial, sans-serif
+  font-family: serif
   font-size: $font-size-basic
   line-height: $font-leading-basic
   letter-spacing: $font-tracking-basic
@@ -89,10 +89,16 @@ img
 
 #header
   width: 100%
+  font-size: 2em
+  min-height: 100vh
+  box-sizing: border-box
+  padding: 15px
 
 // POSTS LOOP
 #posts
   width: 100%
+  box-sizing: border-box
+  padding: 15px
 
 .post
   width: 100%
@@ -100,11 +106,69 @@ img
 #pagination
   width: 100%
 
+#logo
+  float: left
+  margin: 0 20px 0 0
+  width: 300px
+
+nav a
+  border-bottom: 2px solid
 
 // FOOTER
 
 #footer
   width: 100%
+
+// POSTS
+#title-fixed,
+#title
+  font-weight: bold
+  transition: none
+
+#title-fixed
+  display: none
+  position: fixed
+  top: 15px
+  left: 15px
+
+article.fixed-title
+  #title
+    opacity: 0
+
+  #title-fixed
+    display: block
+
+article p
+  max-width: 600px
+
+article img
+  max-height: 100vh
+  max-width: 100vw
+  padding: 5vh
+  margin: 5vh auto
+  display: block
+
+.u-video-embed-container
+  max-width: 80vw
+  padding-bottom: 45%
+  margin: 0 auto
+
+
+// GALLERY
+/*
+.gallery div
+  display: flex
+  width: 100%
+  height: 100vh
+  align-items: center
+  justify-content: center
+
+article img
+  width: auto
+  height: auto
+  max-height: 80vh
+  max-width: 100%
+  */
 
 
 // MEDIA QUERIES

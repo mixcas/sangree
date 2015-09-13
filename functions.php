@@ -97,6 +97,13 @@ function custom_login_logo() {
 add_action( 'login_head', 'custom_login_logo' );
 */
 
+// Add wrapper to oembeds
+function oembed_wrapper($html, $url, $attr, $post_id) {
+  return '<div class="u-embed-wrapper"><div class="u-video-embed-container">' . $html . '</div></div>';
+}
+
+add_filter('embed_oembed_html', 'oembed_wrapper', 10, 4);
+
 // UTILITY FUNCTIONS
 
 // to replace file_get_contents
