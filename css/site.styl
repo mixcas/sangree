@@ -42,6 +42,7 @@ $font-tracking-basic = 0.001em
 $color-black-soft = rgb(14, 14, 14)
 $color-white-soft = rgb(253, 253, 253)
 
+$animation-time = 300ms
 // TYPOGRAPHY
 
 body
@@ -71,7 +72,6 @@ p
 
 a, a:active, a:visited
   color:inherit
-  transition: color .2s
   &:hover
     color: #F5202B
 
@@ -101,11 +101,8 @@ img
 // POSTS LOOP
 #posts
   min-height: 100vh
-
-#posts
   width: 100%
   box-sizing: border-box
-  padding: 15px
 
 .post
   width: 100%
@@ -115,10 +112,10 @@ img
 
 #logo
   float: left
-  margin: 0 20px 0 0
   width: 300px
 
 nav a
+  display: inline-block
   border-bottom: 2px solid
 
 // FOOTER
@@ -138,6 +135,9 @@ nav a
   top: 15px
   left: 15px
 
+#posts article
+  padding: 15px
+
 article.fixed-title
   #title
     opacity: 0
@@ -145,13 +145,10 @@ article.fixed-title
   #title-fixed
     display: block
 
-article p
-  max-width: 600px
-
 article img
   max-height: 100vh
-  max-width: 100vw
-  padding: 5vh
+  max-width: 80vw
+  padding: 5vh 5vw
   margin: 5vh auto
   display: block
 
@@ -183,6 +180,14 @@ article img
 
 
 // MEDIA QUERIES
+
+@media screen and (max-width: 500px)
+  #header
+    font-size: 1.4em
+  #logo 
+    width: 20%
+  article img
+    padding: 5vh 0
 
 @media screen and (max-width: ($col * $cols)+($gutter * $cols))
   html
