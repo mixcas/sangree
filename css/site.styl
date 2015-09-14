@@ -49,6 +49,10 @@ body
   font-size: $font-size-basic
   line-height: $font-leading-basic
   letter-spacing: $font-tracking-basic
+  background-color: white
+
+body.invert
+  filter: invert(100%);
 
 h1
   font-size: 3em
@@ -67,9 +71,9 @@ p
 
 a, a:active, a:visited
   color:inherit
-  transition:opacity .2s
+  transition: color .2s
   &:hover
-    opacity:.5
+    color: #F5202B
 
 
 // BASIC
@@ -150,6 +154,10 @@ article img
   padding: 5vh
   margin: 5vh auto
   display: block
+
+article ul
+  padding-left: 2em
+  margin-bottom: 1em
 
 .u-video-embed-container
   max-width: 80vw
