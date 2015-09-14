@@ -119,6 +119,16 @@ class IGV_Admin {
 			'default' => '#bada55',
 		) );
 
+		$cmb->add_field( array(
+			'name'    => __( 'Site Logo', 'IGV' ),
+			'desc'    => __( 'field description (optional)', 'IGV' ),
+			'id'      => $this->prefix . 'site_logo',
+			'type'    => 'file',
+      'options' => array(
+        'url' => false, // Hide the text input for the url
+        'add_upload_file_text' => 'Add File' // Change upload button text. Default: "Add or Upload File"
+      ),
+		) );
 	}
 
 	/**

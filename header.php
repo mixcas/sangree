@@ -55,7 +55,7 @@
 
   <!-- start content -->
   <header id="header" class="u-cf">
-    <img id="logo" src="http://puu.sh/k4SJS/59f32cb3cd.jpg" />
+    <img id="logo" src="<?php echo igv_get_option('_igv_site_logo'); ?>">
     <!--<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1> -->
   <?php get_template_part('partials/nav'); ?>
   </header>
