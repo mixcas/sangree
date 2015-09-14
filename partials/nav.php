@@ -4,7 +4,7 @@
 $projects_args = array(
   'post_type' => 'project',
   'posts_per_page' => -1,
-  'post_status' => 'published'
+  'post_status' => 'publish'
 );
 $projects_query = new WP_Query( $projects_args );
 if( $projects_query->have_posts() ) {
@@ -29,7 +29,8 @@ $pages_args = array(
   'post_type' => 'page',
   'posts_per_page' => -1,
   'post__not_in' => array(4),
-  'post_status' => 'published'
+  'post_status' => 'publish',
+  'orderby' => 'menu_order'
 );
 $pages_query = new WP_Query( $pages_args );
 if( $pages_query->have_posts() ) {
