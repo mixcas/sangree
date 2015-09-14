@@ -30,6 +30,7 @@ $pages_args = array(
   'posts_per_page' => -1,
   'post__not_in' => array(4),
   'post_status' => 'publish',
+  'order' => 'ASC',
   'orderby' => 'menu_order'
 );
 $pages_query = new WP_Query( $pages_args );
