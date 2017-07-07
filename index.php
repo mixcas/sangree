@@ -26,12 +26,6 @@ if( have_posts() ) {
 
 <?php
   }
-} else {
-?>
-    <article class="u-alert"><?php _e('Sorry, no posts matched your criteria :{'); ?></article>
-<?php
-} ?>
-
   <!-- end posts -->
   </section>
 
