@@ -26,6 +26,8 @@ if( have_posts() ) {
 
 <?php
   }
+}
+?>
   <!-- end posts -->
   </section>
 
